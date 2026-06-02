@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekskluzywna Działka Budowlana | Kotowice, Siechnice - Nowy Styl</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        green: {
+                            'primary': '#031201', // bardzo ciemny, niemal czarny zielony
+                            'mid': '#112211',      // ciemny leśny
+                            'light': '#2c4d32',   // jaśniejszy, mszysty
+                            'accent': '#6ccf7d'    // jasnozielony, miętowy (zamiast złotego)
+                        },
+                        white: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #6ccf7d, #2c4d32); /* jasnozielony do mszystego */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-green-primary text-white font-sans antialiased overflow-x-hidden selection:bg-green-accent selection:text-green-primary">
+
+    <!-- Hero Section -->
+    <header class="relative w-full h-screen flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-green-primary/60 via-green-primary/40 to-green-primary z-10"></div>
+            <img src="pic1.jpg" alt="Widok działki" class="w-full h-full object-cover" />
+        </div>
+        
+        <div class="relative z-20 container mx-auto px-6 text-center" data-aos="fade-up">
+            <span class="uppercase tracking-[0.3em] text-green-accent/80 text-sm md:text-base font-semibold mb-4 block">Oferta Premium • Kotowice, Siechnice</span>
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+                Wymarzona Działka <br/> <span class="text-gradient">1000 m²</span>
+            </h1>
+                <br><span class="uppercase tracking-[0.3em] text-green-accent/80 text-sm md:text-base font-semibold mb-4 block">Lub inna powierzchnia na życzenie</span>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8 font-light leading-relaxed">
+                Zbuduj swój wymarzony dom w miejscu, w którym codzienna harmonia z naturą łączy się z błyskawicznym i niezawodnym dostępem do centrum miasta. 
+            </p>
+                <br><span class="text-green-accent mt-2 block font-medium">A dodatkowo - zaoszczędź tysiące złotych u notariusza!</span>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#kontakt" class="bg-green-accent hover:bg-green-accent/80 text-green-primary px-10 py-4 rounded-sm transition-all duration-300 font-semibold tracking-wide uppercase text-sm">
+                    Umów prezentację
+                </a>
+                <a href="#szczegoly" class="glass hover:bg-white/10 px-10 py-4 rounded-sm transition-all duration-300 font-semibold tracking-wide uppercase text-sm border border-white/20">
+                    Odkryj detale
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+            <a href="#szczegoly" class="text-green-accent/70 hover:text-green-accent transition-colors">
+                <i class="fa-solid fa-chevron-down text-3xl"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- O Lokalizacji -->
+    <section id="szczegoly" class="py-24 bg-green-primary relative">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">Zielona Lokalizacja, Rekreacja i <span class="text-gradient">Unikalny Klimat</span></h2>
+                <p class="text-gray-400 text-lg leading-relaxed font-light">
+                    Kotowice to perełka na mapie wrocławskich przedmieść. To idealna propozycja dla osób i rodzin, które chcą wyrwać się z miejskiego smogu i hałasu. Z progu swojego przyszłego domu zaledwie po kilku krokach znajdziesz się w otoczeniu przepięknych Lasów Siechnickich, malowniczych starorzeczy Odry oraz czystych terenów w pobliżu Jeziora Dziewiczego.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-sm" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute inset-0 bg-green-primary/40 group-hover:bg-green-primary/10 transition-all duration-500 z-10"></div>
+                    <img src="pic2.jpg" alt="Lasy Siechnickie" class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute bottom-6 left-6 z-20">
+                        <h3 class="font-serif text-2xl text-white">Lasy Siechnickie</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-sm" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute inset-0 bg-green-primary/40 group-hover:bg-green-primary/10 transition-all duration-500 z-10"></div>
+                    <img src="pic3.jpg" alt="Wieża Widokowa" class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute bottom-6 left-6 z-20">
+                        <h3 class="font-serif text-2xl text-white">Wieża Widokowa 40m</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-sm" data-aos="fade-up" data-aos-delay="300">
+                    <div class="absolute inset-0 bg-green-primary/40 group-hover:bg-green-primary/10 transition-all duration-500 z-10"></div>
+                    <img src="pic4.jpg" alt="Przedmieścia wrocławia" class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute bottom-6 left-6 z-20">
+                        <h3 class="font-serif text-2xl text-white">Wrocław przedmieścia</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Komunikacja i Infrastruktura -->
+    <section class="py-24 bg-green-mid border-y border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <!-- Komunikacja -->
+                <div data-aos="fade-right">
+                    <span class="uppercase tracking-widest text-green-accent text-sm font-semibold mb-2 block">Dojazd</span>
+                    <h2 class="font-serif text-4xl mb-8">Bezkorkowy Transport</h2>
+                    <p class="text-gray-400 mb-8 font-light leading-relaxed">
+                        Zapomnij o wyczerpujących dojazdach. Niezaprzeczalnym atutem tej działki jest odległość od nowej stacji Kolei Dolnośląskich. Nie akceptuj kompromisów w postaci słabego dojazdu czy stania w gigantycznych korkach do Wrocławia.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="glass p-6 rounded-sm flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-green-accent/10 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-train text-green-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-serif mb-2">PKP Zakrzów Kotowice</h4>
+                                <p class="text-gray-400 text-sm font-light">Dojazd prosto na Dworzec Główny we Wrocławiu zajmuje zaledwie od 15 do 21 minut!</p>
+                            </div>
+                        </div>
+                        <div class="glass p-6 rounded-sm flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-green-accent/10 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-car text-green-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-serif mb-2">Wschodnia Obwodnica (WOW)</h4>
+                                <p class="text-gray-400 text-sm font-light">Samochodem błyskawicznie włączysz się w ruch na Wschodniej Obwodnicy Wrocławia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infrastruktura -->
+                <div data-aos="fade-left">
+                    <span class="uppercase tracking-widest text-green-accent text-sm font-semibold mb-2 block">Udogodnienia</span>
+                    <h2 class="font-serif text-4xl mb-8">Świetna Infrastruktura</h2>
+                    <p class="text-gray-400 mb-8 font-light leading-relaxed">
+                        Wybierając tę działkę, omijasz pułapki tańszych gruntów w szczerym polu. Oferujemy pełne media bez niespodzianek.
+                    </p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-4 border-b border-white/5 pb-4">
+                            <i class="fa-solid fa-road text-green-accent w-6"></i>
+                            <div>
+                                <span class="font-semibold block text-white">Dojazd</span>
+                                <span class="text-sm text-gray-400 font-light">Bezpośredni wjazd na parcelę z porządnej drogi asfaltowej. Koniec z błotnistymi dojazdami!</span>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-4 border-b border-white/5 pb-4">
+                            <i class="fa-solid fa-bolt text-green-accent w-6"></i>
+                            <div>
+                                <span class="font-semibold block text-white">Prąd</span>
+                                <span class="text-sm text-gray-400 font-light">Gotowy, znajduje się bezpośrednio w drodze.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-4 border-b border-white/5 pb-4">
+                            <i class="fa-solid fa-faucet-drip text-green-accent w-6"></i>
+                            <div>
+                                <span class="font-semibold block text-white">Woda miejska</span>
+                                <span class="text-sm text-gray-400 font-light">Sieć wodociągowa poprowadzona przy samej działce.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-4 border-b border-white/5 pb-4">
+                            <i class="fa-solid fa-arrow-trend-up text-green-accent w-6"></i>
+                            <div>
+                                <span class="font-semibold block text-white">Kanalizacja (Atut inwestycyjny)</span>
+                                <span class="text-sm text-gray-400 font-light">Gmina intensywnie pracuje nad projektem budowy kanalizacji sanitarnej. Wartość nieruchomości wzrośnie!</span>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-cloud-showers-heavy text-green-accent w-6"></i>
+                            <div>
+                                <span class="font-semibold block text-white">Wody opadowe</span>
+                                <span class="text-sm text-gray-400 font-light">Obowiązek retencji i zbiornik dają gigantyczny darmowy rezerwuar wody do podlewania ogrodu.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MPZP - Potencjał Architektoniczny -->
+    <section class="py-24 bg-green-primary relative">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2" data-aos="fade-right">
+                    <div class="relative p-2 border border-green-accent/30 rounded-sm">
+                        <img src="pic5.jpg" alt="Nowoczesna stodoła projekt" class="w-full h-auto object-cover rounded-sm shadow-2xl shadow-green-accent/5">
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-green-accent flex items-center justify-center rounded-full shadow-lg">
+                            <span class="font-serif text-green-primary font-bold text-xl text-center leading-tight">MPZP<br>14.MN</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-full lg:w-1/2" data-aos="fade-left">
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">Potężny Potencjał <span class="text-gradient">Architektoniczny</span></h2>
+                    <p class="text-gray-400 text-lg mb-8 font-light leading-relaxed">
+                        Buduj co chcesz! Teren objęty jest nowym, elastycznym Miejscowym Planem Zagospodarowania Przestrzennego. Nowoczesna stodoła czy rozłożysta rezydencja? Wybór należy do Ciebie.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="glass p-6 rounded-sm">
+                            <h4 class="text-green-accent font-bold text-3xl mb-2">30%</h4>
+                            <p class="text-white font-medium mb-1">Max. powierzchnia zabudowy</p>
+                            <p class="text-gray-400 text-sm font-light">Możesz posadowić tu rozłożysty dom parterowy o powierzchni rzutu aż 300 m².</p>
+                        </div>
+                        <div class="glass p-6 rounded-sm">
+                            <h4 class="text-green-accent font-bold text-3xl mb-2">50%</h4>
+                            <p class="text-white font-medium mb-1">Pow. biologicznie czynna</p>
+                            <p class="text-gray-400 text-sm font-light">Twój dom wtopi się w wielki, 500-metrowy zielony ogród.</p>
+                        </div>
+                        <div class="glass p-6 rounded-sm sm:col-span-2">
+                            <h4 class="text-green-accent font-bold text-xl mb-2">Wysokość do 10m</h4>
+                            <p class="text-gray-400 text-sm font-light">Dachy o nachyleniu 35° - 50° to idealne parametry pod najpiękniejsze dziś projekty architektoniczne i wydajne instalacje fotowoltaiczne.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elastyczność Zakupu -->
+    <section class="py-24 bg-green-light">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-serif text-4xl mb-6" data-aos="fade-up">Elastyczność Zakupu & <span class="text-gradient">Oferta dla Deweloperów</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-16 font-light" data-aos="fade-up" data-aos-delay="100">
+                Grunt nie został jeszcze fizycznie podzielony, co daje niespotykaną swobodę transakcyjną! Jesteśmy otwarci na szerokie pole do negocjacji.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-green-primary border border-white/5 p-10 rounded-sm hover:border-green-accent/30 transition-colors duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-ruler-combined text-4xl text-green-accent mb-6"></i>
+                    <h3 class="font-serif text-2xl mb-4 text-white">Wydzielimy Twój ideał</h3>
+                    <p class="text-gray-400 font-light text-sm">Szukasz innej powierzchni niż 1000 m²? Z przyjemnością wydzielimy działkę dokładnie o takich wymiarach, na jakie się umówimy.</p>
+                </div>
+                <div class="bg-green-primary border border-white/5 p-10 rounded-sm hover:border-green-accent/30 transition-colors duration-300 relative overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <div class="absolute top-0 right-0 bg-green-accent text-green-primary text-xs font-bold px-3 py-1 rounded-bl-lg">Deweloperzy</div>
+                    <i class="fa-solid fa-city text-4xl text-green-accent mb-6"></i>
+                    <h3 class="font-serif text-2xl mb-4 text-white">Kup w całości</h3>
+                    <p class="text-gray-400 font-light text-sm">Możliwość sprzedaży całego gruntu: dz. 98/3 (4566 m²) oraz dz. 99/3 (2151 m²) - łącznie ponad 6700 m². Doskonała lokata pod osiedle!</p>
+                </div>
+                <div class="bg-green-primary border border-white/5 p-10 rounded-sm hover:border-green-accent/30 transition-colors duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fa-solid fa-building-user text-4xl text-green-accent mb-6"></i>
+                    <h3 class="font-serif text-2xl mb-4 text-white">Zakup spółki</h3>
+                    <p class="text-gray-400 font-light text-sm">Dla inwestorów komercyjnych oferujemy opcję przejęcia całej spółki z o.o., która jest wyłącznym właścicielem działek (optymalizacja).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PCC & Kontakt -->
+    <section id="kontakt" class="py-32 bg-green-primary relative">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-accent/20 via-green-primary to-green-primary pointer-events-none"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            
+            <!-- Info PCC -->
+            <div class="inline-block bg-green-accent/10 text-green-accent border border-green-accent/20 px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider mb-10 w-max mx-auto" data-aos="fade-down">
+                Kupujący zwolniony z 2% PCC
+            </div>
+            <h2 class="font-serif text-4xl md:text-5xl mb-8 text-white max-w-4xl mx-auto">
+                Skorzystaj z czystej oszczędności <span class="text-green-accent">i zamieszkaj w raju</span>
+            </h2>
+            
+            <div class="max-w-4xl mx-auto mb-16 space-y-6 text-gray-300 font-light leading-relaxed">
+                <p>
+                    Działka sprzedawana jest przez podmiot prawny na fakturę VAT. Jako kupujący NIE PŁACISZ u notariusza 2% podatku od czynności cywilnoprawnych (PCC). 
+                </p>
+                <p class="text-green-accent font-medium text-lg">
+                    To czysta oszczędność w gotówce na poziomie ponad 5 000 złotych już na samym starcie budowy!
+                </p>
+                <p>
+                    Nie czekaj na wzrost cen po wdrożeniu kanalizacji. Skontaktuj się już dziś.
+                </p>
+            </div>
+            
+            <!-- Kontakt Numer -->
+            <div class="glass p-12 rounded-sm inline-block shadow-2xl border border-green-accent/10" data-aos="fade-up">
+                <div class="flex flex-col items-center gap-6">
+                    <div class="w-16 h-16 rounded-full bg-green-accent/10 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-phone text-green-accent text-3xl"></i>
+                    </div>
+                    <a href="tel:+48601789894" class="font-serif text-5xl md:text-7xl text-white font-bold tracking-wider hover:text-green-accent transition-colors">
+                        +48 601 789 894
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-primary py-8 border-t border-green-accent/5 text-center">
+        <div class="container mx-auto px-6">
+            <p class="text-gray-600 text-sm font-light">
+                &copy; 2026 Ekskluzywne Działki Budowlane. Wszelkie prawa zastrzeżone. <br>
+                Powyższa oferta ma charakter informacyjny i nie stanowi oferty handlowej w rozumieniu art. 66 §1 Kodeksu Cywilnego.
+            </p>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+    </script>
+</body>
+</html>
